@@ -1,0 +1,98 @@
+.standard_width{
+    max-width: 1200px;
+    width: 100%;
+    padding: 15px 20px;
+    margin: auto;
+}
+.navbaR span{
+    max-width: 100px !important;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.right_nav{
+    max-width: 720px;
+    width: 100%;
+}
+.sign_up_btn{
+    background-color: #005BAA;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.login_btn{
+    color: #cf0c36;
+    font-size: 14px;
+    font-weight: 500;
+}
+.right_nav span samp img{ 
+    margin-top: -4.5px;
+    margin-left: 2px;
+    display: inline-block;
+    /* background-color: #cf0c36; */
+}
+
+.hover_Effect .hover_Effect2,
+.hover_Effect .hover_Effect3,
+.hover_Effect .hover_Effect4,
+.hover_Effect .hover_Effect5{
+    display: none;
+}
+.hover_Effect:hover .hover_Effect2,
+.hover_Effect:hover .hover_Effect3,
+.hover_Effect:hover .hover_Effect4,
+.hover_Effect:hover .hover_Effect5{
+    display: block;
+}
+
+.hover_Effect:hover img,
+.hover_Effect:hover .saxm img,
+.hover_Effect:hover .saxm2 img,
+.hover_Effect:hover .saxm3 img{
+    transform: rotate(180deg);
+    padding-left: 0;
+}
+
+.hover_Effect2,
+.hover_Effect3,
+.hover_Effect4,
+.hover_Effect5{
+    position: absolute;
+    z-index: 100000 !important;
+}
+.hover_Effect{
+    position: relative;
+}
+
+.drop_Down_container{
+    background-color: #fff;
+    margin-top: 10px;
+    min-width: 150px;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+}
+.drop_Down_container p{
+    text-align: initial;
+}
+.cartValue{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #cf0c36;
+    /* padding: 2px; */
+    border-radius: 100%;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    align-items: center;
+}
