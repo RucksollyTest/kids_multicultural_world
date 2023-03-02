@@ -1,0 +1,49 @@
+.aboutLander{
+    width: 100%;
+    min-height: 500px;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0,0,0,.4), rgb(0,91,170,.4)),url(../Css/Images/lkimags.jpeg);
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 1 !important;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding: 35px;
+}
+.aboutSign_upBtn{
+    color: #fff;
+    background-color: #005BAA;
+    display: inline-block;
+    max-width: 150px;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px 20px;
+}
+.enrol_mag_container{
+    margin-left: auto;
+    background-color: rgb(0,91,170,.5);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 350px;
+    width: 100%;
+}
+.upcoming_mag_Btn{
+    color: #fff;
+    background-color: rgb(207,12,54,.9);
+    display: inline-block;
+    max-width: 150px;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px 20px;
+}
+.upcoming_mag_Btn:hover{
+    color: #fff;
+}
+.ulMag li{
+    margin-left: -12px;
+}
