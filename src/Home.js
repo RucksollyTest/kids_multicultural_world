@@ -59,14 +59,14 @@ const Home = () => {
                                 </div>
                                 <div>
                                     <div className='botBorder mb_1'>
-                                        <img src="/DelImages/aakash-dhage-8oTlyFFch9M-unsplash.jpg" alt="" />
+                                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07.jpeg" alt="" />
                                     </div>
                                     <div className="inside_id2">
                                         <div className='thres'>
-                                            <img src="/DelImages/thomas-chizzali-iuo7PqHp89I-unsplash.jpg" className='imgOnes' alt="" />
-                                            <img src="/DelImages/jason-leung-uguokqI7ncw-unsplash.jpg" className='imgtwos' alt="" />
+                                            <img src="/Images/grl.jpeg" className='imgOnes' alt="" />
+                                            <img src="/Images/stage.jpeg" className='imgtwos' alt="" />
                                         </div>
-                                        <img src="/DelImages/birk-enwald-UiQAb2rzL40-unsplash.jpg" className='imgThres' alt="" />
+                                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.10 (10).jpeg" className='imgThres' alt="" />
                                     </div>
                                 </div>
                                 <div className='LastColImg'>
@@ -108,15 +108,15 @@ const Home = () => {
                             <div className="about_pix_container">
                                 <div>
                                     <div className='aboutPix1 flex'>
-                                        <img src="/DelImages/anita-austvika-UWyG-YrRaUA-unsplash.jpg" alt="" />
+                                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07 (4).jpeg" alt="" />
                                     </div>
                                     <div className='aboutPix2 flex'>
-                                        <img src="/DelImages/el-guseinov-lPDRFQxaQDg-unsplash.jpg" alt="" />
+                                        <img src="/Images/WhatsApp Image 2.jpeg" alt="" />
                                     </div>
                                 </div>
                                 <div>
                                     <div className='pt_6 aboutPix3'>
-                                        <img src="/DelImages/el-guseinov-lPDRFQxaQDg-unsplash.jpg" alt="" />
+                                        <img src="/Images/imbg2.jpeg" alt="" />
                                     </div>
                                     <div className="mt_1 aboutPix4">
                                         <img src="/DelImages/aakash-dhage-8oTlyFFch9M-unsplash.jpg" alt="" />
