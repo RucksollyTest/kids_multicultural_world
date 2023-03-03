@@ -1,0 +1,76 @@
+.aboutLander2{
+    width: 100%;
+    min-height: 500px;
+    align-items: center;
+    background: linear-gradient(to right, #fff, #FAD4C1),url(../Css/Images/lkimags.jpeg);
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 1 !important;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding: 35px;
+}
+.border_filter{
+    border: 1px solid #f1f1f1;
+    border-radius: 2px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.borderRight{
+    border-right: 1px solid #f1f1f1;
+}
+.borderRight:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.shop{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 40px;
+}
+.shop_item{
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 4px;
+}
+.shop_description{
+    background-color: rgb(189,18,61,.1);
+    border-radius: 10px;
+    padding: 20px
+}
+.add_to_cart{
+    background-color: rgb(189,18,61,.7);
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    align-items: center;
+    font-size: 24px;
+    position: relative;
+    /* padding-bottom: 20px; */
+    /* font-weight: 800; */
+}
+.add_to_cart div{
+    position: absolute;
+    top: -5px;
+    left: 7px;
+    /* bottom: 0; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

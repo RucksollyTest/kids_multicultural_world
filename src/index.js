@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import './Css/Navbar.css';
 import './Css/Home.css';
+import './Css/Others.css';
 import './Css/About.css';
 import './Css/Footer.css';
 
