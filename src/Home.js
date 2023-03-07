@@ -70,7 +70,7 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className='LastColImg'>
-                                    <img src="/DelImages/anita-austvika-UWyG-YrRaUA-unsplash.jpg" alt="" />
+                                    <img src="/Images/WhatsApp Image 2023-03-06 at 11.49.55.jpeg" alt="" />
                                 </div>
                             </div>
                         </div>

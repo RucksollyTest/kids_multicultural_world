@@ -25,12 +25,12 @@ const Navbar = () => {
                         <div className='hover_Effect2'>
                             <div className="drop_Down_container text-dark shadow_sm">
                                 <p>
-                                    <Link to={"/home"}>
+                                    <Link to={"/hoodies-n-shirts"}>
                                         Hoodie
                                     </Link>
                                 </p>
                                 <p>
-                                    <Link to={"/home"}>
+                                    <Link to={"/hair-bonnets"}>
                                         Hair Burnet
                                     </Link>
                                 </p>
