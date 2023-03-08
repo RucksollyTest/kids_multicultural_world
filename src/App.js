@@ -13,6 +13,8 @@ import EventsDetails from './EventsDetails';
 import Hoodies from './Hoodies';
 import Bonnets from './Bonnets';
 import Modelling from './Modelling';
+import Acting from './Acting';
+import Cart from './Cart';
 
 function App() {
     return (
@@ -33,6 +35,7 @@ function App() {
 					<Route path="/faqs" element ={<Faqs/>} />
 
 					{/* Shop */}
+					<Route path="/cart" element ={<Cart/>} />
 					<Route path="/shop" element ={<Shop/>} />
 					<Route path="/hoodies-n-shirts" element ={<Hoodies/>} />
 					<Route path="/hair-bonnets" element ={<Bonnets/>} />
@@ -43,6 +46,7 @@ function App() {
 					{/* Classes */}
 					<Route path="/classes" element ={<Classes/>} />
 					<Route path="/modelling-classes" element ={<Modelling />} />
+					<Route path="/acting-classes" element ={<Acting />} />
 
 					{/* Events */}
 					<Route path="/events" element ={<Events/>} />

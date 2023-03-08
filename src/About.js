@@ -15,7 +15,7 @@ const About = () => (
                     </div>
                     <div>
                         <Link to={"/sign_up"} className="aboutSign_upBtn">
-                            Enrol Now
+                            Enroll Now
                         </Link>
                     </div>
                 </div>

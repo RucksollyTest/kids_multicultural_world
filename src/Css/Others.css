@@ -66,20 +66,20 @@
     color: blue;
 }
 .different.from.balaBlue{
-    color: #005BAA;
+    color: #3491E8;
 }
 .clothes .shop_description{
-    background-color: rgb(0,91,170,.1);
+    background-color: rgb(52,145,232,.1);
 }
 
 .clothes .add_to_cart{
-    background-color: rgb(0,91,170,.7);
+    background-color: rgb(52,145,232,.7);
 }
 .clothes .red{
-    color: #005BAA;
+    color: #3491E8;
 }
 .blue{
-    color: #005BAA;
+    color: #3491E8;
 }
 
 .carousel-indicators button{
@@ -97,7 +97,7 @@
     background: linear-gradient(to right,#fff, #fff);
 }
 .classLanding_page{
-    background: linear-gradient(to right, rgb(0,91,170,.09), #fff);
+    background: linear-gradient(to right, rgb(52,145,232,.09), #fff);
     width: 100%;
     min-height: 400px;
     
@@ -142,7 +142,7 @@
     margin-top: 40px;
 }
 .mageHeader{
-    background-color: #005BAA;
+    background-color: #3491E8;
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -229,7 +229,7 @@
     text-align: center;
     padding: 8px 20px;
     color: #fff;
-    background-color: #005BAA;
+    background-color: #3491E8;
     border-radius: 7px;
 }
 .upcoming_Eevent_btn:hover{
@@ -241,7 +241,7 @@
     border-radius: 10px;
 }
 .eventIckets_btn{
-    background-color: #005BAA;
+    background-color: #3491E8;
     color: #fff;
     border-radius: 4px;
     padding: 8px 20px;
@@ -260,16 +260,152 @@
     padding: 20px;
     display: flex;
 }
+.modelling{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.first_side{
+    background-color: rgb(52,145,232,.1);
+    height: 90vh;
+    display: flex;
+}
+.first_sideContent{
+    max-width: 450px;
+    margin: 12vh 0 0 auto;
+    height: 425px;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    padding: 50px;
+}
+.first_side2{
+    height: 90vh;
+    display: flex;
+    background-color: rgb(207,12,54,.08);
+}
+.second_sideContent{
+    max-width: 450px;
+    margin: 12vh auto 0 0;
+    height: 425px;
+    width: 100%;
+    position: relative;
+}
+.second_sideContent img{
+    width: 100%;
+    height: 100%;
+}
+.ModelsHeaderCont_ents{
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1;
+    margin-top: 15%;
+    color: black;
+}
+.modeling_BTN{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(52,145,232,.9);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 175px;
+    width: 100%;
+    text-align: center;
+    padding: 14px ;
+}
+.modeling_BTN2{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3491E8;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 14px ;
+}
+.modeling_BTN:hover{
+    color: #ffffff;
+}
 
 
-
-
-
-
-
-
-
-
-
-
+.modeling_BTN3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(207,12,54,.9);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 175px;
+    width: 100%;
+    text-align: center;
+    padding: 14px ;
+}
+.modeling_BTN5{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #CF0C36;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 14px ;
+}
+.cart_container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.cart_body{
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 10px 0 30px 0;
+}
+.cart_body2{
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 10px 0 0 0;
+}
+.cart_divider{
+    border-bottom: 2px solid #eceefc;
+    padding: 15px;
+}
+.cart_dividers{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.cart_headerTit{
+    font-size: 19px;
+    font-weight: 700;
+    padding: 0 15px 5px 15px;
+    border-bottom: 2px solid #eceefc;
+}
+.cart_divider button{
+    border-radius: 5px;
+    background-color: #3491E8;
+    padding: 0 5px;
+    color: #fff;
+    width: 25px;
+    display: block;
+    text-align: center;
+    border: none;
+}
+.cart_dividers img{
+    border-radius: 5px;
+    max-height: 170px;
+    color: #eceefc;
+}
 

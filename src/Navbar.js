@@ -55,12 +55,12 @@ const Navbar = () => {
                         <div className='hover_Effect3'>
                             <div className="drop_Down_container text-dark shadow_sm">
                                 <p>
-                                    <Link to={"/home"}>
+                                    <Link to={"/modelling-classes"}>
                                         Modelling
                                     </Link>
                                 </p>
                                 <p>
-                                    <Link to={"/home"}>
+                                    <Link to={"/acting-classes"}>
                                         Acting
                                     </Link>
                                 </p>

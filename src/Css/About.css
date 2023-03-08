@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 500px;
     align-items: center;
-    background: linear-gradient(to right, rgba(0,0,0,.4), rgb(0,91,170,.4)),url(../Css/Images/lkimags.jpeg);
+    background: linear-gradient(to right, rgba(0,0,0,.4), rgb(52,145,232,.4)),url(../Css/Images/lkimags.jpeg);
     background-position: center center;
     background-size: cover;
     box-sizing: border-box;
@@ -15,7 +15,7 @@
 }
 .aboutSign_upBtn{
     color: #fff;
-    background-color: #005BAA;
+    background-color: #3491E8;
     display: inline-block;
     max-width: 150px;
     text-align: center;
@@ -28,7 +28,7 @@
 }
 .enrol_mag_container{
     margin-left: auto;
-    background-color: rgb(0,91,170,.5);
+    background-color: rgb(52,145,232,.5);
     border-radius: 10px;
     padding: 30px;
     max-width: 350px;
