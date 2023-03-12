@@ -6,8 +6,8 @@ const Cart = () => {
   return (
     <div style={{backgroundColor: "#eceefc"}}>
         <div className="p-2"></div>
-        <div className="cart_container">
-            <div className="cart_body">
+        <div className="cart_container xs">
+            <div className="cart_body shadow">
                 <div className='cart_headerTit'>
                     Cart(1)
                 </div>
@@ -121,7 +121,7 @@ const Cart = () => {
                 </div>
             </div>
             <div>
-                <div className="cart_body2">
+                <div className="cart_body2 shadow">
                     <div className="cart_headerTit">
                         Cart Summary
                     </div>
@@ -139,7 +139,7 @@ const Cart = () => {
                             <div className="font_14 text-muted">
                                 Delivery fees not included yet.
                             </div>
-                            <Link to={"/home"} className="upcoming_Eevent_btn">
+                            <Link to={"/cart-summary"} className="upcoming_Eevent_btn">
                                 Checkout ($23)
                             </Link>
                         </div>

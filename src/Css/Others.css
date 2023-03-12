@@ -231,6 +231,8 @@
     color: #fff;
     background-color: #3491E8;
     border-radius: 7px;
+    border: none;
+    width: 100%;
 }
 .upcoming_Eevent_btn:hover{
     color: #fff;
@@ -364,7 +366,7 @@
 }
 .cart_container{
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 2fr;
     grid-gap: 20px;
     max-width: 1200px;
     margin: 20px auto;
@@ -380,12 +382,16 @@
     padding: 10px 0 0 0;
 }
 .cart_divider{
-    border-bottom: 2px solid #eceefc;
+    border-bottom: 1px solid #eceefc;
     padding: 15px;
 }
 .cart_dividers{
     display: grid;
     grid-template-columns: 1fr 4fr;
+}
+.cart_dividersheck{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
 }
 .cart_headerTit{
     font-size: 19px;
@@ -393,7 +399,7 @@
     padding: 0 15px 5px 15px;
     border-bottom: 2px solid #eceefc;
 }
-.cart_divider button{
+.xs .cart_divider button{
     border-radius: 5px;
     background-color: #3491E8;
     padding: 0 5px;
@@ -403,9 +409,77 @@
     text-align: center;
     border: none;
 }
-.cart_dividers img{
+.cart_dividers img,.cart_dividersheck img{
     border-radius: 5px;
     max-height: 170px;
     color: #eceefc;
 }
-
+.cart_divider input{
+    max-width: 500px;
+    width: 100%;
+    border: 2px solid #ECEEFC;
+    padding: 8px 10px;
+    border-radius: 7px;
+}
+.cart_divider input.error{
+    border: 2px solid #CF5271;
+}
+.submitHandlerBtn{
+    background-color: #3491E8;
+    color: #fff;
+    padding: 7px 20px;
+    max-width: 150px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+.ItemsDetail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 40px;
+}
+.divItemsOption{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px 0;
+}
+.divItemsOption div{
+    padding: 10px;
+}
+.divItemsOption img{
+    border-radius: 4px;
+}
+.divItemsOption img:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.detailRightN{
+    padding-left: 100px;
+}
+.detailCartAdd{
+    border-radius: 40px;
+    display: flex;
+    background-color: #f1f1f1;
+    max-width: 300px;
+}
+.detailCartAdd span{
+    font-size: 26px;
+    padding: 8px 30px 14px 30px;
+    display: inline-block;
+}
+.detailCartAdd samp{
+    font-size: 22px;
+    padding: 14px 10px 6px 10px;
+    display: inline-block;
+}
+.AddToCartDetailsBtn{
+    padding: 13px 20px;
+    border: none;
+    border-radius: 30px;
+    max-width: 180px;
+    width: 100%;
+    text-align: center;
+    background-color: #3491E8;
+    color: #fff;
+}

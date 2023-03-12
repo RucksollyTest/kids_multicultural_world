@@ -15,6 +15,10 @@ import Bonnets from './Bonnets';
 import Modelling from './Modelling';
 import Acting from './Acting';
 import Cart from './Cart';
+import CheckoutSummary from './CheckoutSummary';
+import Login from './Login';
+import SignUp from './SignUp';
+import ItemsDetails from './ItemsDetails';
 
 function App() {
     return (
@@ -28,6 +32,10 @@ function App() {
 					<Route path="/" element ={<Home/>} />
 					<Route path="/home" element ={<Home/>} />
 
+					{/* Login and sign up */}
+					<Route path="/login" element ={<Login/>} />
+					<Route path="/sign-up" element ={<SignUp/>} />
+
 					{/* about */}
 					<Route path="/about" element ={<About/>} />
 
@@ -39,6 +47,8 @@ function App() {
 					<Route path="/shop" element ={<Shop/>} />
 					<Route path="/hoodies-n-shirts" element ={<Hoodies/>} />
 					<Route path="/hair-bonnets" element ={<Bonnets/>} />
+					<Route path="/cart-summary" element ={<CheckoutSummary/>} />
+					<Route path="/item-detail" element ={<ItemsDetails/>} />
 
 					{/* Magazines */}
 					<Route path="/magazines" element ={<Magazines/>} />
