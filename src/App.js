@@ -19,6 +19,8 @@ import CheckoutSummary from './CheckoutSummary';
 import Login from './Login';
 import SignUp from './SignUp';
 import ItemsDetails from './ItemsDetails';
+import Tiers from './Tiers';
+import Dashboard from './Dashboard';
 
 function App() {
     return (
@@ -35,12 +37,16 @@ function App() {
 					{/* Login and sign up */}
 					<Route path="/login" element ={<Login/>} />
 					<Route path="/sign-up" element ={<SignUp/>} />
+					<Route path="/tiers" element ={<Tiers/>} />
 
 					{/* about */}
 					<Route path="/about" element ={<About/>} />
 
 					{/* FAQs */}
 					<Route path="/faqs" element ={<Faqs/>} />
+
+					{/* Dashboard */}
+					<Route path="/dashboard" element ={<Dashboard/>} />
 
 					{/* Shop */}
 					<Route path="/cart" element ={<Cart/>} />

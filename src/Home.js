@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Carousel from 'react-bootstrap/Carousel';
 import Footer from './Footer'
 
 const Home = () => {
@@ -9,10 +10,14 @@ const Home = () => {
     }
     return (
         <div>
-            <div className='standard_width'>
+            <div className='standard_width homeBased'>
                 <div className="pt_5">
-                    <div className="center font_34 bold4">
-                        Kids Multicultural World
+                    <div className="center">
+                        <span className="blue fonts2 font_34 bold4">Kids</span> <span className="red pl_05 fonts2 font_34 bold4">
+                            Multicultural
+                        </span> <span className='blue fonts2 font_34 bold4 pl_05'>
+                        World
+                        </span>
                     </div>
                     <div className="center pt_1">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nostrum, pariatur, consequuntur ipsam rerum 
@@ -47,32 +52,89 @@ const Home = () => {
                     </div>
                     <div className="standard_in">
                         <div className="py_4">
-                            <div className="myCaurosel">
-                                <div>
-                                    <div className="inside_id">
-                                        <img src="/DelImages/birk-enwald-UiQAb2rzL40-unsplash.jpg" alt="" />
-                                        <img src="/DelImages/birk-enwald-UiQAb2rzL40-unsplash.jpg" alt="" />
-                                    </div>
-                                    <div className='botBorder mt_1'>
-                                        <img src="/DelImages/aakash-dhage-8oTlyFFch9M-unsplash.jpg" alt="" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className='botBorder mb_1'>
-                                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07.jpeg" alt="" />
-                                    </div>
-                                    <div className="inside_id2">
-                                        <div className='thres'>
-                                            <img src="/Images/grl.jpeg" className='imgOnes' alt="" />
-                                            <img src="/Images/stage.jpeg" className='imgtwos' alt="" />
+                            <Carousel>
+                                <Carousel.Item interval={4000}>
+                                    <div className="myCaurosel">
+                                        <div>
+                                            <div className="inside_id">
+                                                <img src="/Images/blackHoodies.jpeg" alt="" />
+                                                <img src="/Images/whiteHoodie.jpeg" className='borrad' alt="" />
+                                            </div>
+                                            <div className='botBorder mt_1'>
+                                                <img src="/Images/Shirts.jpeg" alt="" />
+                                            </div>
                                         </div>
-                                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.10 (10).jpeg" className='imgThres' alt="" />
+                                        <div>
+                                            <div className='botBorder mb_1'>
+                                                <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07.jpeg" alt="" />
+                                            </div>
+                                            <div className="inside_id2">
+                                                <div className='thres'>
+                                                    <img src="/Images/college.jpeg" alt="" />
+                                                </div>
+                                                <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.10 (10).jpeg" className='imgThres' alt="" />
+                                            </div>
+                                        </div>
+                                        <div className='LastColImg'>
+                                            <img src="/Images/WhatsApp Image 2023-03-06 at 11.49.55.jpeg" alt="" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div className='LastColImg'>
-                                    <img src="/Images/WhatsApp Image 2023-03-06 at 11.49.55.jpeg" alt="" />
-                                </div>
-                            </div>
+                                </Carousel.Item>
+                                <Carousel.Item interval={4000}>
+                                    <div className="myCaurosel">
+                                        <div>
+                                            <div className="inside_id">
+                                                <img src="/Images/blackHoodies.jpeg" alt="" />
+                                                <img src="/Images/Shirts.jpeg" className='borrad' alt="" />
+                                            </div>
+                                            <div className='botBorder mt_1'>
+                                                <img src="/Images/HairBonnets.jpeg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className='botBorder mb_1'>
+                                                <img src="/Images/colleges.jpeg" alt="" />
+                                            </div>
+                                            <div className="inside_id2">
+                                                <div className='thres'>
+                                                    <img src="/Images/Web BR2.jpg" alt="" />
+                                                </div>
+                                                <img src="/Images/Web BR3.jpg" className='imgThres' alt="" />
+                                            </div>
+                                        </div>
+                                        <div className='LastColImg'>
+                                            <img src="/Images/magCovers.jpeg" alt="" />
+                                        </div>
+                                    </div>
+                                </Carousel.Item>
+                                <Carousel.Item interval={4000}>
+                                    <div className="myCaurosel">
+                                        <div>
+                                            <div className="inside_id">
+                                                <img src="/Images/blackHoodies.jpeg" alt="" />
+                                                <img src="/Images/Shirts.jpeg" className='borrad' alt="" />
+                                            </div>
+                                            <div className='botBorder mt_1'>
+                                                <img src="/Images/HairBonnets.jpeg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className='botBorder mb_1'>
+                                                <img src="/Images/Web TR1.jpg" alt="" />
+                                            </div>
+                                            <div className="inside_id2">
+                                                <div className='thres'>
+                                                    <img src="/Images/Web BR1.jpg" alt="" />
+                                                </div>
+                                                <img src="/Images/Web BR3.jpg" className='imgThres' alt="" />
+                                            </div>
+                                        </div>
+                                        <div className='LastColImg'>
+                                            <img src="/Images/cover.jpeg" alt="" />
+                                        </div>
+                                    </div>
+                                </Carousel.Item>
+                            </Carousel>
                         </div>
                         <div>
                             <Link className='join_now_btn'>

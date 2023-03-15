@@ -6,7 +6,7 @@ import Footer from './Footer'
 const Events = () => {
     return (
         <div>
-            <div className='standard_width'>
+            <div className='standard_width haefa'>
                 <Carousel>
                     <Carousel.Item interval={3000}>
                         <div className="aboutLander2fx">

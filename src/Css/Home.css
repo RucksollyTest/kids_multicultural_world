@@ -61,8 +61,9 @@
     grid-template-columns: 1fr 1fr;
 }
 .thres img{
-    max-height: 64px;
+    max-height: 100%;
     width: 100%;
+    border-radius: 10px 0 0 10px;
 }
 .imgOnes{
     border-radius: 10px 0 0 0;
@@ -74,6 +75,7 @@
 }
 .imgThres{
     border-radius: 0 10px 10px 0;
+    height: 100%;
 }
 
 .LastColImg img{

@@ -82,11 +82,18 @@
     color: #3491E8;
 }
 
-.carousel-indicators button{
+.haefa .carousel-indicators button{
     width: 5px !important;
     border-radius: 100%;
 }
-.carousel-control-prev-icon,.carousel-control-next-icon{
+.haefa .carousel-control-prev-icon,.carousel-control-next-icon{
+    display: none !important;
+}
+
+.homeBased .carousel-indicators button{
+    display: none !important;
+}
+.homeBased .carousel-control-prev-icon,.carousel-control-next-icon{
     display: none !important;
 }
 
@@ -554,9 +561,15 @@
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
 }
 
 .signUpForms{
     padding: 60px 100px 60px 60px;
 }
-
+.classics img{
+    border-radius: 5px;
+}
+.borrad{
+    border: 0.5px solid #f1f1f1;
+}

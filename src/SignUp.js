@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const SignUp = () => {
     const [email,setEmail] = useState("")
     const [password,setPassword] = useState("")
     const [formType,setFormType] = useState(false)
+    const history = useNavigate()
     const submitHandler = ()=>{
-
+        history("/tiers")
     }
     return (
         <div className='loginFormBg2'>
             <div className='pt_1'>
-                <div className='signUpFormContainer'>
+                <div className='signUpFormContainer shadow'>
                     <div className='signUpForms'>
                         <div className="bold7 font_24 red">
                             Sign Up
@@ -60,8 +61,8 @@ const SignUp = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <img src="/Images/loginImg.jpeg" alt="" />
+                    <div className='classics'>
+                        <img src="/Images/loginImg4.jpeg" alt="" />
                     </div>
                 </div>
             </div>

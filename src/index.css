@@ -21,7 +21,39 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-
+.fonts1{
+  font-family: 'Climate Crisis', cursive;
+}
+.fonts10{
+    font-family: 'Tilt Prism', cursive;
+}
+.fonts9{
+    font-family: 'Sono', sans-serif;
+}
+.fonts8{
+    font-family: 'Sacramento', cursive;
+}
+.fonts7{
+    font-family: 'Rubik Iso', cursive;
+}
+.fonts6{
+    font-family: 'Rampart One', cursive;
+}
+.fonts5{
+    font-family: 'Raleway', sans-serif;
+}
+.fonts4{
+    font-family: 'Permanent Marker', cursive;
+}
+.fonts2{
+  font-family: 'Fredoka One', cursive;
+}
+.fonts3{
+  font-family: 'Pacifico', cursive;
+}
+.pl_05{
+    padding-left: 5px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

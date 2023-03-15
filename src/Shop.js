@@ -8,7 +8,7 @@ import ListBonnets from './ListBonnets';
 const Shop = () => {
     return (
         <div>
-            <div className="standard_width">
+            <div className="standard_width haefa">
                 <div className='shadow_sm border_radius'>
                     <Carousel>
                         <Carousel.Item interval={3000}>
