@@ -483,3 +483,80 @@
     background-color: #3491E8;
     color: #fff;
 }
+
+
+.loginFormBg{
+    background-color: #EFF0F4;
+    height: 90vh;
+}
+.loginFormBg2{
+    background-color: #EFF0F4;
+}
+
+.loginContainerBox3{
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    margin: auto;
+    padding: 40px;
+    border-radius: 7px;
+}
+.paddForm{
+    padding: 90px 0;
+}
+.loginContainerBox3 input,
+.registerContent input{
+    margin: 15px 0;
+    padding: 9px 10px;
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid #ccc7c7;
+}
+.loginContainerBox3 input.xb,
+.registerContent input.xb{
+    border: none;
+    margin: 0;
+
+}
+.passwordFormContainer{
+    display: flex;
+    margin: 15px 0;
+    /* padding: 9px 10px; */
+    border-radius: 4px;
+    border: 1px solid #ccc7c7;
+}
+.sight{
+    padding-top: 9px;
+    padding-right: 5px;
+}
+.loginContainerBox3 button{
+    background-color: #3491E8;
+    color: #fff;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    padding: 9px;
+}
+.signUpFormContainer button{
+    background-color: #3491E8;
+    color: #fff;
+    border-radius: 4px;
+    max-width: 200px;
+    border: none;
+    padding: 9px;
+    width: 100%;
+}
+.signUpFormContainer{
+    margin: 10px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.signUpForms{
+    padding: 60px 100px 60px 60px;
+}
+
