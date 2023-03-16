@@ -90,13 +90,17 @@
     display: none !important;
 }
 
-.homeBased .carousel-indicators button{
+.homeBased .carousel-indicators button,
+.reviews .carousel-indicators button{
     display: none !important;
 }
 .homeBased .carousel-control-prev-icon,.carousel-control-next-icon{
     display: none !important;
 }
-
+.homeBased .carousel-control-prev,
+.homeBased .carousel-control-next {
+    display: none;
+}
 .aboutLander2 img{
     max-height: 406px;
 }

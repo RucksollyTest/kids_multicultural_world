@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <div className='sticky-top bg-white navbaR'>
         <div className="flex standard_width">
-            <samp className="font_20 bold7">
-                Logo
-            </samp>
+            <Link className='logoContentContaIner' to={"/home"}>
+                <img src="/Images/kids multicultural logo 2.png" alt="" />
+            </Link>
             <div className="left_auto flex right_nav">
                 <span>
                     <Link to={"/about"}>
