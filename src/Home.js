@@ -165,14 +165,16 @@ const Home = () => {
                         </div>
                         <div className="pt_5 about">
                             <div className="font_20 bold6">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, omnis natus! Unde maiores minima voluptates dolores sunt quidem, a illo.
+                                The Kids Multicultural World is a cultural activism, Fashion , Modeling and Acting Academy focused on Uniting a diverse Nation of Kids ages 0 month - 17 years.
                             </div>
                             <div>
                                 <div>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, ad molestiae dolor alias delectus consequatur nam vero sint nostrum expedita quidem, quos eos fugiat aperiam laudantium neque consequuntur, ut voluptas.
+                                    We produce a bimonthly magazine, online Modeling & acting classes and host annual Kids Multicultural Fashion Shows & Festivals Worldwide.
+
+                                    We educate Kids to take pride in cultural heritage ,bring more awareness to multiculturalism to end discrimination, bullying and segregation- understanding the importance of self-growth, building skills, and capitalizing on their individual talents.
                                 </div>
                                 <div className="pt_4">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sapiente quam soluta itaque, voluptates, aspernatur architecto magnam exercitationem reiciendis id fugiat, vitae quos perferendis eum dolorem vel officiis ratione. Ea.
+                                    This organization was founded on May 1st, 2017 by CEO .Queen Amb. Dr. Krystal Okeke’Chanchangi. A global cultural activist and voice for the next generation. The Ceo is focused on eliminating discrimination, bullying, and segregation.
                                 </div>
                             </div>
                         </div>
