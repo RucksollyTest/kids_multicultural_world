@@ -1,9 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Faqs = () => {
-  return (
-    <div>Faqs</div>
-  )
+    return (
+        <div>
+            <Navbar />
+        </div>
+    )
 }
 
 export default Faqs

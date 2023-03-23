@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
 
 const Magazines = () => {
     return (
         <div>
+            <Navbar />
             <div className="standard_width">
                 <div className="mageHeader">
                     <div className="pt_05 font_20 bold6 text-white">

@@ -2,10 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Carousel from 'react-bootstrap/Carousel';
 import Footer from './Footer'
+import Navbar from './Navbar';
 
 const Events = () => {
     return (
         <div>
+            <Navbar />
             <div className='standard_width haefa'>
                 <Carousel>
                     <Carousel.Item interval={3000}>

@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Footer from './Footer'
+import Navbar from './Navbar'
 
 
 const EventsDetails = () => {
   return (
     <div>
+        <Navbar />
         <div className="standard_width">
             <div className="eventImgContainer">
                 <img src="/DelImages/chuttersnap-Q_KdjKxntH8-unsplash (1).jpg" alt="" />

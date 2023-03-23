@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from './Footer'
+import Navbar from './Navbar'
 
 const CheckoutSummary = () => {
     const [name,setName] = useState(null)
@@ -41,6 +42,7 @@ const CheckoutSummary = () => {
     
     return (
         <div style={{backgroundColor: "#eceefc"}}>
+            <Navbar />
             <div className="p-2"></div>
             <div className="cart_container">
                 <div className="cart_body shadow">

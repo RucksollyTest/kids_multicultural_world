@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Footer from './Footer'
+import Navbar from './Navbar'
 
 const Cart = () => {
   return (
     <div style={{backgroundColor: "#eceefc"}}>
+        <Navbar />
         <div className="p-2"></div>
         <div className="cart_container xs">
             <div className="cart_body shadow">

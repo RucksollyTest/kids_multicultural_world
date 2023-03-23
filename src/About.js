@@ -1,9 +1,13 @@
 import React from 'react'
+import Navbar from './Navbar';
 import { Link } from 'react-router-dom'
 import Footer from './Footer'
 
 const About = () => (
     <div>
+        <div>
+            <Navbar />
+        </div>
         <div className='standard_width'>
             <div className="aboutLander">
                 <div>

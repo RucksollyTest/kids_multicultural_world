@@ -21,13 +21,16 @@ import SignUp from './SignUp';
 import ItemsDetails from './ItemsDetails';
 import Tiers from './Tiers';
 import Dashboard from './Dashboard';
+import Profile from './Profile';
+import Tickests from './Tickests';
+import Order from './Order';
 
 function App() {
     return (
 		<div className="App">
 			<Router>
 				<ScrollToTop />
-				<Navbar />
+				{/* <Navbar /> */}
 				<Routes>
 					
 					{/* Home */}
@@ -37,10 +40,17 @@ function App() {
 					{/* Login and sign up */}
 					<Route path="/login" element ={<Login/>} />
 					<Route path="/sign-up" element ={<SignUp/>} />
+					<Route path="/sign_up" element ={<SignUp/>} />
 					<Route path="/tiers" element ={<Tiers/>} />
 
 					{/* about */}
 					<Route path="/about" element ={<About/>} />
+					
+					{/* Profile */}
+					<Route path="/profile" element ={<Profile/>} />
+
+					{/* Tickets */}
+					<Route path="/tickets" element ={<Tickests />} />
 
 					{/* FAQs */}
 					<Route path="/faqs" element ={<Faqs/>} />
@@ -55,6 +65,7 @@ function App() {
 					<Route path="/hair-bonnets" element ={<Bonnets/>} />
 					<Route path="/cart-summary" element ={<CheckoutSummary/>} />
 					<Route path="/item-detail" element ={<ItemsDetails/>} />
+					<Route path="/orders" element ={<Order />} />
 
 					{/* Magazines */}
 					<Route path="/magazines" element ={<Magazines/>} />

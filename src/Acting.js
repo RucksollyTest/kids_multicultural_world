@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
 
 const Acting = () => {
   return (
     <div>
+        <Navbar />
         <div className='modelling'>
             <div className="first_side2 ">
                 <div className="first_sideContent">

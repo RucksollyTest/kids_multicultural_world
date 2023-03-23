@@ -8,6 +8,7 @@ import './Css/Home.css';
 import './Css/Others.css';
 import './Css/About.css';
 import './Css/Footer.css';
+import './Css/Dashboard.css';
 
 import reportWebVitals from './reportWebVitals';
 

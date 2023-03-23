@@ -4,10 +4,12 @@ import Footer from './Footer'
 import Carousel from 'react-bootstrap/Carousel';
 import ListHoodies from './ListHoodies';
 import ListBonnets from './ListBonnets';
+import Navbar from './Navbar';
 
 const Shop = () => {
     return (
         <div>
+            <Navbar />
             <div className="standard_width haefa">
                 <div className='shadow_sm border_radius'>
                     <Carousel>

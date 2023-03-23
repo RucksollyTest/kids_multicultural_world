@@ -1,9 +1,11 @@
 import React from 'react'
 import Footer from './Footer'
+import Navbar from './Navbar'
 
 const ItemsDetails = () => {
   return (
     <div>
+        <Navbar />
         <div className='standard_width'>
             <div className="ItemsDetail">
                 <div className='shadow-sm'>
