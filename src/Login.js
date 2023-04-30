@@ -12,7 +12,6 @@ const Login = () => {
     return (
         <div>
             <Navbar />
-        
             <div className='loginFormBg'>
                 <div className="paddForm">
                     <div className="loginContainerBox3">

@@ -28,26 +28,28 @@ const Footer = () => {
                                 <img src="https://img.icons8.com/ios/24/CF0C36/tiktok--v1.png"/>
                             </a>
                         </div>
-                        <div className="pt_5">
-                            <img src="https://img.icons8.com/ios-filled/24/CF0C36/place-marker--v1.png"/>
-                            <span className="pl_2 bold7">
-                                2801 Kings dr , Chicago Illinois 60615
-                            </span>
-                        </div>
-                        <div className="pt_1">
-                            <img src="https://img.icons8.com/fluency-systems-filled/24/CF0C36/filled-message.png"/>
-                            <a href="mailto:global@Kidsmulticulturalworld.org" className="pl_2 bold7">
-                                global@Kidsmulticulturalworld.org
-                            </a>
-                        </div>
-                        <div className="pt_1">
-                        <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/24/CF0C36/external-phone-networking-tanah-basah-glyph-tanah-basah.png"/>
-                            <a href="tel:+17252508777" className="pl_2 bold7">
-                                +17252508777
-                            </a>
+                        <div className="footer">
+                            <div className="pt_5">
+                                <img src="https://img.icons8.com/ios-filled/24/CF0C36/place-marker--v1.png"/>
+                                <span className="pl_2 bold7">
+                                    2801 Kings dr , Chicago Illinois 60615
+                                </span>
+                            </div>
+                            <div className="pt_1">
+                                <img src="https://img.icons8.com/fluency-systems-filled/24/CF0C36/filled-message.png"/>
+                                <a href="mailto:global@Kidsmulticulturalworld.org" className="pl_2 bold7">
+                                    global@Kidsmulticulturalworld.org
+                                </a>
+                            </div>
+                            <div className="pt_1">
+                            <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/24/CF0C36/external-phone-networking-tanah-basah-glyph-tanah-basah.png"/>
+                                <a href="tel:+17252508777" className="pl_2 bold7">
+                                    +17252508777
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div className='otherRoutes'>
+                    <div className='otherRoutes footer'>
                         
                         <div>
                             <div className="text-dark bold7 font_20">

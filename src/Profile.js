@@ -94,7 +94,12 @@ const Profile = () => {
                                 <div>
                                     <img src="/Images/KleopatraA-Z-Vargas.jpeg" alt="" />
                                 </div>
-                                
+                                <div>
+                                    <img src="/Images/KleopatraA-Z-Vargas.jpeg" alt="" />
+                                </div>
+                                <div>
+                                    <img src="/Images/KleopatraA-Z-Vargas.jpeg" alt="" />
+                                </div>
                                 
                             </div>
                         </div>

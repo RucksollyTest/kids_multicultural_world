@@ -7,7 +7,7 @@ const SideBar = () => {
         <div className='sideBarIconcontainer'>
             <div className="iconsConts">
                 <div>
-                    <Link to={"home"}>
+                    <Link to={"/home"}>
                         <img src="https://img.icons8.com/sf-black-filled/44/ffffff/home-page.png"/>
                     </Link>
                 </div>
@@ -32,7 +32,7 @@ const SideBar = () => {
                     </Link>
                 </div>
                 <div>
-                    <Link to={"home"}>
+                    <Link to={"/settings"}>
                         <img src="https://img.icons8.com/ios-filled/38/ffffff/settings.png"/>
                     </Link>
                 </div>

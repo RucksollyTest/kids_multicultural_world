@@ -12,7 +12,7 @@ const Tickests = () => {
         <div className='pt_1'></div>
             <div className='mainContent shadow'>
                 <DashboardNav />
-                <div className='mainContentDashboardsubs'>
+                <div className='mainContentDashboardsubs zaTickets'>
                     <div className="DashboardTicketsContainer">
                         <div>
                             <div>
@@ -68,7 +68,7 @@ const Tickests = () => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className='zaTickets'>
                             <div className="flex">
                                 <span className="font_20 bold6">
                                     Events
@@ -78,7 +78,7 @@ const Tickests = () => {
                                 </Link>
                             </div>
                             <div className="eventDashboardContainer pointer border-bottom"
-                                onClick={()=>window.location.href="tradewaid.com"}
+                                onClick={()=>window.location.href="google.com"}
                             >
                                 <div>
                                     <img src="/Images/IMG_8509.jpg" alt="" />
@@ -102,7 +102,7 @@ const Tickests = () => {
                                 </div>
                             </div>
                             <div className="eventDashboardContainer pointer border-bottom"
-                                onClick={()=>window.location.href="tradewaid.com"}
+                                onClick={()=>window.location.href="google.com"}
                             >
                                 <div>
                                     <img src="/Images/IMG_8509.jpg" alt="" />
@@ -126,7 +126,7 @@ const Tickests = () => {
                                 </div>
                             </div>
                             <div className="eventDashboardContainer pointer border-bottom"
-                                onClick={()=>window.location.href="tradewaid.com"}
+                                onClick={()=>window.location.href="google.com"}
                             >
                                 <div>
                                     <img src="/Images/IMG_8509.jpg" alt="" />
@@ -150,7 +150,7 @@ const Tickests = () => {
                                 </div>
                             </div>
                             <div className="eventDashboardContainer pointer border-bottom"
-                                onClick={()=>window.location.href="tradewaid.com"}
+                                onClick={()=>window.location.href="google.com"}
                             >
                                 <div>
                                     <img src="/Images/IMG_8509.jpg" alt="" />

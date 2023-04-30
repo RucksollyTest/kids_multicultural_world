@@ -14,7 +14,7 @@
     font-weight: 500;
 }
 .right_nav{
-    max-width: 720px;
+    max-width: 860px;
     width: 100%;
 }
 .sign_up_btn{
@@ -95,4 +95,42 @@
     width: 18px;
     text-align: center;
     align-items: center;
+}
+.navbaR samp{
+    display: none;
+}
+.logoContentContaIner img{
+    max-width: 50px;
+}
+@media (max-width:940px) {
+    .navbaR span{
+        max-width: 80px !important;
+        padding: 0 7px;
+        font-size: 12px;
+    }
+    .navbaR a.px_2{
+        padding: 0 10px;
+    }
+}
+@media (max-width:790px) {
+    .navbaR span{
+        display: none;
+    }
+    .navbaR samp{
+        display: inline-block;
+        padding-left: 15px;
+    }
+    .navbaR .login_btn{
+        display: none;
+    }
+    .navbaR .sign_up_btn{
+        display: none;
+    }
+    
+}
+
+@media (max-width:550px) {
+    .logoContentContaIner img{
+        max-width: 40px;
+    }
 }

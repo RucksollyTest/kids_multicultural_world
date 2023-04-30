@@ -42,7 +42,9 @@
     border-radius: 10px;
     margin-right: 10px;
 }
-
+.navbarStickyTop{
+    border-radius: 10px;
+}
 .iconser{
     height: 50px;
     width: 50px;
@@ -201,16 +203,179 @@
     border-left: 5px solid #CF5271;
     margin-bottom: 15px;
 }
-
-
-
-
-
-
-
-
-
-
+.flex.xdv{
+    justify-content: space-between;
+    max-width: 700px;
+    width: 100%;
+    padding-top: 15px;
+}
+.settignsContent{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+.setPcont{
+    margin: 10px 0 20px 0;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+.setPcont input{
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.grided{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.grided3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.padSociaDisplay{
+    padding: 4px 20px;
+}
+.dashNavs samp,.cativ{
+    display: none;
+}
+.ClassicItemsSales.sm{
+    display: none;
+}
+@media (max-width:900px) {
+    .DashboardTicketsContainer{
+        grid-template-columns: 1fr;
+    }
+    .zaTickets .zaTickets{
+        display: none;
+    }
+    .mainContentDashboard{
+        grid-template-columns: 2fr 3fr;
+    }
+    .font24{
+        font-size: 12px;
+    }
+    .subscribe_btn{
+        margin-top: 10px;
+    }
+    .subscribe_btn .font_14{
+        font-size: 11px;
+    }
+    .bootContent{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 12px;
+    }
+    
+    .ClassicItemsSales{
+        display: none;
+    }
+    .ClassicItemsSales.sm{
+        display: block;
+    }
+    .bootDesign{
+        grid-template-columns:1fr;
+        padding: 10px 20px 20px 20px;
+    }
+    .mainContentDashboardsubsContainer{
+        grid-template-columns: 2fr 3fr;
+    }
+    .profilePhotosContainer{
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: 10px;
+    }
+    .mainContentDashboardsubs{
+        padding: 13px;
+    }
+    .grided3{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:700px) {
+    .mainContentDashboard{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .mainContentDashboardsubsContainer{
+        grid-template-columns: 1fr;
+    }
+    
+    .profileImageContainer img{
+        max-height: 350px;
+    }
+    .profileVideoContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .settignsContent img{
+        display: none;
+    }
+    .settignsContent{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:650px) {
+    .dashNavLinks,.px_2 .iconser
+    ,.px_1 .iconser,.navSideBar{
+        display: none;
+    }
+    .mainContent{
+        background-color: #fff;
+        margin: 0 10px 10px 10px;
+        padding-left: 0;
+    }
+    .dashNavs{
+        padding: 15px 15px 15px 15px;
+        margin-right: 0;
+    }
+    .dashNavs samp,.cativ{
+        display: block;
+    }
+    .profilePhotosContainer{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media (max-width:600px) {
+    .profileRemarkContainer{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:500px) {
+    .settingsContainer .pointer.pr_1{
+        font-size: 12px;
+    }
+    .setPcont{
+        margin: 10px 0 20px 0;
+        border-radius: 20px;
+        padding: 30px 15px;
+    }
+    .grided{
+        grid-template-columns: 1fr;
+    }
+    .grided3{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:450px) {
+    .bootContent{
+        grid-template-columns: 1fr;
+    }
+    .font_38{
+        font-size: 20px;
+    }
+    .profilePhotosContainer{
+        grid-template-columns: 1fr ;
+    }
+    .profileVideoContainer{
+        grid-template-columns: 1fr;
+    }
+    .settingsContainer .pointer.pr_1{
+        font-size: 10px;
+        padding-right: 4px;
+    }
+}
 
 
 

@@ -30,7 +30,7 @@ const EventsDetails = () => {
                 <div className="mt_3 bold6 font_24">
                     When and where
                 </div>
-                <div className="flex pt_4">
+                <div className="flex pt_4 xbfd">
                     <div className="shadow p-4">
                         <img src="https://img.icons8.com/cotton/34/null/overtime--v2.png"/>
                         <div className="pt_1">

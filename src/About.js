@@ -5,11 +5,9 @@ import Footer from './Footer'
 
 const About = () => (
     <div>
-        <div>
-            <Navbar />
-        </div>
+        <Navbar />
         <div className='standard_width'>
-            <div className="aboutLander">
+            {/* <div className="aboutLander">
                 <div>
                     <div className="font_40 bold8 text-white">
                         KIDS MULTICULTURAL WORLD
@@ -47,32 +45,47 @@ const About = () => (
                         </div>
                     </div>
                 </div>
+            </div> */}
+            <div className='aboutLandpg'>
+                <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07.jpeg" alt="" />
             </div>
-            <div className="mt_5">
-                <div className="font_24 bold7">
-                    ABOUT US
+            <div className="mt_7">
+                
+                <div className="standardTwo">
+                    
+                    <div>
+                        <div>
+                            <span className="blue fonts2 font_34 bold4">
+                                ABOUT
+                            </span> 
+                            <span className="red pl_05 fonts2 font_34 bold4">
+                                US
+                            </span> 
+                        </div>
+                        <p className="font_24 pt_3 bold7">
+                            The Kids Multicultural World is a cultural activism, Fashion , Modeling and Acting Academy focused on Uniting a diverse Nation of Kids ages 0 month - 17 years.
+                        </p>
+                        <p className="font_20 pt_3">
+                            We produce a bimonthly magazine, online Modeling & acting classes and host annual Kids
+                            Multicultural Fashion Shows & Festivals Worldwide.
+                        </p>
+                    </div>
+                    <div>
+                        
+                        <p className="font_20 pt_2">
+                            We educate Kids to take pride in
+                            cultural heritage ,bring more awareness to multiculturalism to end discrimination, bullying and segregation- understanding the importance of self-growth, building skills, and capitalizing on their individual talents.
+                        </p>
+                        <p className="font_20">
+                            This organization was founded on May 1st, 2017 by CEO .Queen Amb. Dr. Krystal Okeke’Chanchangi. A global
+                            cultural activist and voice for the next generation. The
+                            Ceo is focused on eliminating discrimination, bullying, and segregation.
+                        </p>
+                        <p className="font_20">
+                            <span className="red">Mission :</span> Uniting a Diverse Nation
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div className='mt_4'>
-                <p className="font_20">
-                    The Kids Multicultural World is a cultural activism, Fashion , Modeling and Acting Academy focused on Uniting a diverse Nation of Kids ages 0 month - 17 years.
-                </p>
-                <p className="font_20">
-                    We produce a bimonthly magazine, online Modeling & acting classes and host annual Kids
-                    Multicultural Fashion Shows & Festivals Worldwide.
-                </p>
-                <p className="font_20">
-                    We educate Kids to take pride in
-                    cultural heritage ,bring more awareness to multiculturalism to end discrimination, bullying and segregation- understanding the importance of self-growth, building skills, and capitalizing on their individual talents.
-                </p>
-                <p className="font_20">
-                    This organization was founded on May 1st, 2017 by CEO .Queen Amb. Dr. Krystal Okeke’Chanchangi. A global
-                    cultural activist and voice for the next generation. The
-                    Ceo is focused on eliminating discrimination, bullying, and segregation.
-                </p>
-                <p className="font_20">
-                    <span className="red">Mission :</span> Uniting a Diverse Nation
-                </p>
             </div>
         </div>
         <Footer />

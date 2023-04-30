@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const DashboardNav = () => {
   return (
-    <div className='sticky-top bg-white'>
+    <div className='navbarStickyTop sticky-top bg-white'>
         <div className='dashNavs'>
             <div>
                 <Link className='logoContentContaIner' to={"/home"}>
@@ -39,6 +39,15 @@ const DashboardNav = () => {
                 <div className='px_1'>
                     <img className='iconser shadow-sm' src="/Images/c20a4a_e89814ef8a0e4f37b814a5f37fb4d8cf_mv2.webp" alt="" />
                 </div>
+                <Link to={"/cart"} className="px_1 relative cativ">
+                    <img src="https://img.icons8.com/pastel-glyph/20/null/shopping-cart--v2.png"/>
+                    <div className="cartValue">
+                        1
+                    </div>
+                </Link>
+                <samp className='pl_1'>
+                    <img src="https://img.icons8.com/material-sharp/24/3491E8/multiline-text.png"/>
+                </samp>
             </div>
         </div>
     </div>

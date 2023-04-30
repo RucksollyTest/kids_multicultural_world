@@ -38,7 +38,7 @@ const Classes = () => {
                     </div>
                 </div>
             </div>
-            <div className="standard_width">
+            <div className="standard_width xr">
                 <div className="standard_in">
                     <div className="pt_7 bold7 font_32">
                         Modeling Classes

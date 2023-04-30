@@ -86,21 +86,32 @@
     width: 5px !important;
     border-radius: 100%;
 }
-.haefa .carousel-control-prev-icon,.carousel-control-next-icon{
-    display: none !important;
-}
+
 
 .homeBased .carousel-indicators button,
 .reviews .carousel-indicators button{
     display: none !important;
 }
-.homeBased .carousel-control-prev-icon,.carousel-control-next-icon{
-    display: none !important;
-}
 .homeBased .carousel-control-prev,
 .homeBased .carousel-control-next {
-    display: none;
+    background-color: rgb(207,12,54,0.5) ;
+    height: 50px;
+    width: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 100px;
 }
+.haefa .carousel-control-prev-icon,
+.carousel-control-next-icon{
+    /* display: none !important; */
+}
+
+
+.homeBased .carousel-control-prev-icon,
+.carousel-control-next-icon{
+    /* display: none !important; */
+}
+
 .aboutLander2 img{
     max-height: 406px;
 }
@@ -138,6 +149,7 @@
     grid-gap: 20px;
     position: absolute;
     bottom: -160px;
+    padding: 20px;
 }
 .text_align_center{
     padding-top: 40px;
@@ -171,12 +183,23 @@
 .upcoming_mag_Btn2:hover{
     color: #fff;
 }
+.upcoming_mag_Btn_iii{
+    color: #fff;
+    background-color: #CF5271;
+    display: inline-block;
+    max-width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    padding: 8px 20px;
+}
 .magazin_covers{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 35px;
     margin-top: 40px;
 }
+
 .mag{
     border-radius: 10px;
 }
@@ -381,6 +404,7 @@
     grid-gap: 20px;
     max-width: 1200px;
     margin: 20px auto;
+    padding: 0 20px;
 }
 .cart_body{
     background-color: #fff;
@@ -499,9 +523,11 @@
 .loginFormBg{
     background-color: #EFF0F4;
     height: 94vh;
+    padding: 0 10px;
 }
 .loginFormBg2{
     background-color: #EFF0F4;
+    padding: 0 20px;
 }
 
 .loginContainerBox3{
@@ -573,7 +599,280 @@
 }
 .classics img{
     border-radius: 5px;
+    height: 100%;
 }
 .borrad{
     border: 0.5px solid #f1f1f1;
+}
+.myMensory img{
+    margin: 5px;
+    border-radius: 5px;
+}
+@media (max-width:900px) {
+    .shop{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .magazin_covers{
+        grid-gap: 20px;
+    }
+    .diveid img{
+        max-width: 100%;
+        border-radius: 4px;
+    }
+    .signUpForms{
+        padding: 20px 60px 20px 20px;
+    }
+}
+@media (max-width:860px) {
+    .diveid{
+        bottom: -80px;
+        padding: 20px;
+    }
+    .eventGridContainer{
+        grid-gap: 20px;
+    }
+    
+    .eventGridContainer .p-3{
+        padding: 12px !important;
+    }
+    .cart_container{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+@media (max-width:800px) {
+    .signUpForms{
+        padding: 20px 40px 20px 0;
+    }
+}
+@media (max-width:700px) {
+    .signUpFormContainer{
+        padding: 15px;
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: auto;
+    }
+    .classics{
+        display: none;
+    }
+    .loginFormBg2{
+        padding: 0 10px;
+    }
+    .signUpForms{
+        padding: 20px 0;
+        
+    }
+}
+@media (max-width:650px) {
+    .eventGridContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .modelling{
+        grid-template-columns: 1fr;
+    }
+    .second_side{
+        display: none;
+    }
+    .first_sideContent{
+        max-width: 100%;
+        margin: 30px 0 0 0;
+        
+    }
+    .ClassHeader{
+        font-size: 28px;
+    }
+    .classesDescHeader{
+        font-size: 23px;
+    }
+    .classDivider{
+        grid-template-columns: 1fr;
+    }
+    
+    .diveid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        position: static;
+        margin-bottom: -200px;
+        padding: 0;
+    }
+    .font_40{
+        font-size: 28px;
+    }
+    .shop{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .magazin_covers{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .magazin_covers .p-3{
+        padding: 10px !important;
+    }
+    .cart_container{
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+}
+
+@media (max-width:600px) {
+    .homeBased .carousel-control-prev,
+    .homeBased .carousel-control-next {
+        height: 30px;
+        width: 30px;
+        border-radius: 25px;
+    }
+    .haefa .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+        width: 1rem;     
+    }
+
+
+    .homeBased .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+        width: 1rem; 
+    }
+    .model_class_CONtainer{
+        grid-template-columns: 1fr;
+    }
+    .font_32{
+        font-size: 25px;
+    }
+    .standard_width.xr{
+        padding-top: 50px;
+    }
+    .flex.xbfd{
+        display: block;
+    }
+    .xbfd .ml_2{
+        margin: 35px 0 0 0;
+    }
+}
+@media (max-width:550px) {
+    .paddForm{
+        padding: 40px 0;
+    }
+    .loginContainerBox3{
+        padding: 25px;
+    }
+    .ModelsHeaderCont_ents{
+        font-size: 26px;
+    }
+    .aboutLander2{
+        min-height: 500px;
+        grid-template-columns: 1fr;
+        padding: 35px;
+    }
+    .font_12{
+        font-size: 11px;
+    }
+    .font_15{
+        font-size: 12px;
+    }
+    .mageHeader .font_20{
+        font-size: 15px;
+    }
+    .upcoming_mag_Btn2{
+        max-width: 100px;
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:500px) {
+    .cart_dividers .font_18{
+        font-size: 13px;
+    }
+    .cart_dividers .font_14{
+        font-size: 11px;
+    }
+    .cart_dividers .font_20{
+        font-size: 14px;
+    }
+    .cart_dividers .mt_1{
+        margin-top: 2px;
+    }
+    .cart_divider .pt_2{
+        padding-top: 10px;
+    }
+    .cart_divider .text-danger{
+        font-size: 12px;
+    }
+    .font_24{
+        font-size: 18px;
+    }
+    .border_filter .borderRight{
+        font-size: 11px;
+    }
+    .border_filter .borderRight.py_2{
+        padding: 15px 0;
+    }
+    .border_filter{
+        margin-top: 14px;
+    }
+    .shop{
+        grid-gap: 10px;
+    }
+    .shop_description .font_16{
+        font-size: 12px;
+    }
+    .shop_description .font_12{
+        font-size: 11px;
+    }
+    .shop_description{
+        padding: 10px
+    }
+    .magazin_covers{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 12px;
+    }
+}
+@media (max-width:450px) {
+    .font_28{
+        font-size: 22px;
+    }
+    .aboutLander2fx .mt_7{
+        margin-top: 30px;
+    }
+    .mageHeader .font_20{
+        font-size: 12px;
+    }
+    .eventGridContainer{
+        grid-template-columns: 1fr;
+    }
+    .upcoming_mag_Btn2{
+        max-width: 80px;
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+    .diveid{
+        margin-bottom: -160px;
+        padding: 0;
+    }
+    .classLanding_page{
+        padding: 20px;
+    }
+    .standard_width.xr{
+        padding-top: 80px;
+    }
+}
+@media (max-width:400px) {
+    .aboutLander2{
+        padding: 15px;
+    }
+    .font_20{
+        font-size: 16px;
+    }
+    .border_filter .borderRight{
+        font-size: 10px;
+    }
+    .border_filter .borderRight.py_2{
+        padding: 10px 0;
+    }
+    .upcoming_mag_Btn2{
+        min-width: 80px;
+        padding: 6px;
+        font-size: 10.5px;
+    }
 }

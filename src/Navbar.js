@@ -15,6 +15,11 @@ const Navbar = () => {
                     </Link>
                 </span>
                 <span>
+                    <Link to={"/kids"}>
+                        Kids
+                    </Link>
+                </span>
+                <span>
                     <div className="hover_Effect">
                         <Link to={"/shop"}>
                             Shop
@@ -73,7 +78,7 @@ const Navbar = () => {
                         Events
                     </Link>
                 </span>
-                <div>
+                <div className='left_auto'>
                     <Link to={"/cart"} className="px_1 relative">
                         <img src="https://img.icons8.com/pastel-glyph/20/null/shopping-cart--v2.png"/>
                         <div className="cartValue">
@@ -86,6 +91,9 @@ const Navbar = () => {
                     <Link to={"/sign-up"} className="ml_1 sign_up_btn">
                         Sign Up
                     </Link>
+                    <samp>
+                        <img src="https://img.icons8.com/material-sharp/24/3491E8/multiline-text.png"/>
+                    </samp>
                 </div>
 
             </div>

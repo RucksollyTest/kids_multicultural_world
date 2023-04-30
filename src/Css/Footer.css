@@ -35,8 +35,42 @@
     border-top: 1px solid #c0bcbc;
 }
 
-
-
+@media (max-width: 850px) {
+    .footer span,.footer p span,.footer a{
+        font-size: 14px;
+    }
+    .social_media_logo a{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        padding-top: 6px;
+    }
+}
+@media (max-width: 650px) {
+    .footer_container{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        /* padding: 60px 0 40px 0; */
+    }
+    .otherRoutes{
+        padding-top: 0;
+    }
+}
+@media (max-width: 450px) {
+    .otherRoutes{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    
+    .social_media_logo{
+        justify-content: space-between;
+        display: flex;
+    }
+    .borderTop.text-muted{
+        font-size: 12px;
+        text-align: center;
+    }
+}
 
 
 

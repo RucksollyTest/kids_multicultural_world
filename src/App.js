@@ -1,6 +1,5 @@
 import './App.css';
 import Home from './Home';
-import Navbar from './Navbar';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import ScrollToTop from './ScrollToTop';
 import About from './About';
@@ -24,6 +23,8 @@ import Dashboard from './Dashboard';
 import Profile from './Profile';
 import Tickests from './Tickests';
 import Order from './Order';
+import Settings from './Settings';
+import Kids from './Kids';
 
 function App() {
     return (
@@ -46,6 +47,9 @@ function App() {
 					{/* about */}
 					<Route path="/about" element ={<About/>} />
 					
+					{/* kids */}
+					<Route path="/kids" element ={<Kids/>} />
+										
 					{/* Profile */}
 					<Route path="/profile" element ={<Profile/>} />
 
@@ -57,6 +61,9 @@ function App() {
 
 					{/* Dashboard */}
 					<Route path="/dashboard" element ={<Dashboard/>} />
+
+					{/* Events */}
+					<Route path="/settings" element ={<Settings/>} />
 
 					{/* Shop */}
 					<Route path="/cart" element ={<Cart/>} />

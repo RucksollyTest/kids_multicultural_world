@@ -50,12 +50,36 @@
 .ulMag li{
     margin-left: -12px;
 }
-.red{
+.xdv .active, .red{
     color: #BD123D;
 }
-
-
-
+.standardTwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+.aboutLandpg img{
+    width: 100%;
+    max-height: 600px;
+    border-radius: 10px;
+}
+@media (max-width:700px) {
+    .standardTwo{
+        grid-gap: 20px;
+    }
+}
+@media (max-width:600px) {
+    .standardTwo{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    .standardTwo p.font_24{
+        font-size: 19px;
+    }
+    .standardTwo p.font_20{
+        font-size: 15px;
+    }
+}
 
 
 
