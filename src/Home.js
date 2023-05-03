@@ -3,14 +3,20 @@ import { Link } from 'react-router-dom'
 import Carousel from 'react-bootstrap/Carousel';
 import Footer from './Footer'
 import Navbar from './Navbar';
+import { useDispatch, useSelector } from 'react-redux';
+import { newsLetterAction } from './Action';
+import Message from './Message';
+import Loader2 from './Loader2';
 
 const Home = () => {
 
-    const submitHandler = ()=>{
-        console.log("submitted")
-    }
     const ref = useRef(null)
     const [height,setHeight] = useState(199)
+
+    const dispatch= useDispatch()
+    const [newsEmail, setNewsEmail] = useState("")
+    const newsLetter = useSelector(state => state.newsLetter)
+    const {loading,error:errors,success} = newsLetter
 
     useEffect(() => {
         document.onreadystatechange = () => {
@@ -18,6 +24,27 @@ const Home = () => {
         };
         
     }, []);
+
+    const submitHandler=()=>{
+        if(!newsEmail){
+            
+        }else{
+            dispatch(newsLetterAction({newsEmail}))
+        }
+    }
+
+    const [errorsHandler, setErrorsHandler] = useState("")
+    useEffect(() => {
+        if(loading){
+            setErrorsHandler("")
+        }else if (errors){
+            setErrorsHandler("An error occoured")
+        }else if(success){
+            setErrorsHandler("Success!")
+        }else{
+            setErrorsHandler("")
+        }
+    }, [loading,errors,success,dispatch]);
 
     return (
         <div>
@@ -662,11 +689,22 @@ const Home = () => {
                     <div className='font_14'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis excepturi, laudantium at reprehenderit
                     </div>
+                    {(errors && errorsHandler) ? <Message variant={"danger"}>An error occoured</Message> : (success && errorsHandler) ? <Message variant={"success"}>Success!</Message> : ""}
                     <div className="newLetterInpuContainer">
-                        <input type="text" placeholder='Input Email Address' />
-                        <button type='submit' onClick={()=>submitHandler}>
-                            Submit
-                        </button>
+                        <input type="text" placeholder='Input Email Address'
+                            value={newsEmail}
+                            onChange={(e)=>setNewsEmail(e.target.value)}
+                        />
+                        {loading ?
+                            <button type='submit'>
+                                <Loader2 />
+                            </button>
+                        :
+                            <button type='submit' disabled={loading ? true : false} onClick={submitHandler}>
+                                Submit
+                            </button>
+                        }
+                        
                     </div>
                 </div>
             </div>

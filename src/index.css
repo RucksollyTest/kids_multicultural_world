@@ -10,6 +10,9 @@
 button{
   border: none;
 }
+.alert{
+  padding: 10px 15px;
+}
 input{
   outline: none !important;
 }
