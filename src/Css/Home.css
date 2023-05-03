@@ -75,13 +75,12 @@
 }
 .imgThres{
     border-radius: 0 10px 10px 0;
-    height: 100%;
-    max-height: 100%;
+    height: inherit;
 }
 
 .LastColImg img{
+    height: inherit;
     height: 100%;
-    max-height: 100%;
     border-radius: 10px;
 }
 
