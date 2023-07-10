@@ -1,103 +1,51 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { useDispatch, useSelector } from 'react-redux'
+import { magazineAction } from './Action'
+import DateFormatter from './DateFormatter'
 
 const Magazines = () => {
+    const dispatch= useDispatch()
+    const magazine = useSelector(state => state.magazine)
+    const {loading,error,magazines} = magazine
+
+    useEffect(()=>{
+        dispatch(magazineAction())
+    },[])
     return (
         <div>
             <Navbar />
             <div className="standard_width">
                 <div className="mageHeader">
                     <div className="pt_05 font_20 bold6 text-white">
-                        Get featured in upcoming magazine
+                        MAGAZINES
                     </div>
-                    <div className='left_auto'>
+                    {/* <div className='left_auto'>
                         <Link to={"/home"} className="upcoming_mag_Btn2">
                             Get Started
                         </Link>
-                    </div>
+                    </div> */}
                     
                 </div>
                 <div className="magazin_covers">
-                    <Link to={"/home"}>
-                        <div className='mag shadow'>
-                            <img src="/Images/IMG_8509.jpg" alt="" />
-                            <div className="p-3">
-                                <div className="font_12 bold5 text-muted">
-                                    12-02-2023                            
+                    {magazines && 
+                        magazines.map(x =>(
+                            <a href={`${x.link}`} target='_blank'>
+                                <div className='mag shadow'>
+                                    <img src={`${process.env.REACT_APP_BASE_URL}${x.cover_image}`} alt={x.name} />
+                                    <div className="p-3">
+                                        <div className="font_12 bold5 text-muted">
+                                            <DateFormatter date={x.date} />                           
+                                        </div>
+                                        <div className="font_15 bold6">
+                                            {x.name}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="font_15 bold6">
-                                    January 1st Edition
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={"/home"}>
-                        <div className='mag shadow'>
-                            <img src="/Images/IMG_8509.jpg" alt="" />
-                            <div className="p-3">
-                                <div className="font_12 bold5 text-muted">
-                                    12-02-2023                            
-                                </div>
-                                <div className="font_15 bold6">
-                                    January 1st Edition
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={"/home"}>
-                        <div className='mag shadow'>
-                            <img src="/Images/IMG_8509.jpg" alt="" />
-                            <div className="p-3">
-                                <div className="font_12 bold5 text-muted">
-                                    12-02-2023                            
-                                </div>
-                                <div className="font_15 bold6">
-                                    January 1st Edition
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={"/home"}>
-                        <div className='mag shadow'>
-                            <img src="/Images/IMG_8509.jpg" alt="" />
-                            <div className="p-3">
-                                <div className="font_12 bold5 text-muted">
-                                    12-02-2023                            
-                                </div>
-                                <div className="font_15 bold6">
-                                    January 1st Edition
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={"/home"}>
-                        <div className='mag shadow'>
-                            <img src="/Images/IMG_8509.jpg" alt="" />
-                            <div className="p-3">
-                                <div className="font_12 bold5 text-muted">
-                                    12-02-2023                            
-                                </div>
-                                <div className="font_15 bold6">
-                                    January 1st Edition
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={"/home"}>
-                        <div className='mag shadow'>
-                            <img src="/Images/IMG_8509.jpg" alt="" />
-                            <div className="p-3">
-                                <div className="font_12 bold5 text-muted">
-                                    12-02-2023                            
-                                </div>
-                                <div className="font_15 bold6">
-                                    January 1st Edition
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
+                            </a>
+                        ))
+                    }
                 </div>
             </div>
             <Footer />

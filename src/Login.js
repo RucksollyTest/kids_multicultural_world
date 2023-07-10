@@ -1,14 +1,45 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import Navbar from './Navbar'
+import { useDispatch, useSelector } from 'react-redux'
+import { loginAction } from './Action'
+import Loader2 from './Loader2'
 
 const Login = () => {
     const [email,setEmail] = useState("")
     const [password,setPassword] = useState("")
     const [formType,setFormType] = useState(false)
-    const submitHandler = ()=>{
 
+    const [errorMsg,setErrorMsg] = useState()
+    const dispatch = useDispatch()
+    const location = useLocation()
+
+    const redirect = location.search ? location.search.split("=")[1]: "/dashboard"
+
+    const userLogin = useSelector(state => state.userLogin)
+    const {error,loading,userInfo} =userLogin
+
+    const history = useNavigate()
+    
+
+    useEffect(()=>{
+        if (userInfo){
+            history(redirect)
+        }
+    },[history,userInfo,redirect,dispatch,loading])
+
+    const submitHandler = (e)=>{
+        // e.preventDefault()
+        setErrorMsg("")
+        if(!password || !email){
+            setErrorMsg("Password or email field cannot be empty")
+        }else if(password.length <5){
+            setErrorMsg("Invalid password or email")
+        }else{
+            dispatch(loginAction(email,password))
+        }
     }
+
     return (
         <div>
             <Navbar />
@@ -41,7 +72,7 @@ const Login = () => {
                         </div>
                         <div>
                             <button onClick={submitHandler}>
-                                Submit
+                                {loading ? <Loader2 /> : "Submit"}
                             </button>
                         </div>
                         <div className="pt_1">

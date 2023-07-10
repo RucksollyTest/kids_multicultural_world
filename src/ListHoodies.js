@@ -1,135 +1,110 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { cartAddAction, shopAction } from './Action'
+import Loader from './Loader'
+import IsEmpty from './IsEmpty'
 
-const ListHoodies = () => {
+
+const ListHoodies = ({setMe}) => {
+    const dispatch= useDispatch()
+    const shop = useSelector(state => state.shop)
+    const {loading,error,shop:shopp} = shop
+
+    useEffect(()=>{
+        dispatch(shopAction())
+    },[])
+
+    const addTocartHandler = (x)=>{
+        let cart = JSON.parse(localStorage.getItem(`cartUserItems`))
+        let cartfilt = cart ? cart.filter(m =>m.id === x.id) : ""
+        if(cartfilt && !IsEmpty(cartfilt)){
+            let cartin = 0
+            cart.map((k,nn)=>{
+                if (k.id === x.id){
+                    cartin = nn
+                }
+            })
+            if ((x.amount_available >= cart[cartin].counter + 1) || !(x.amount_available)){
+                cart[cartin].counter = cart[cartin].counter + 1
+            }
+            localStorage.setItem(`cartUserItems`, JSON.stringify(cart))
+            dispatch(cartAddAction())
+        }else{
+            if (!cart){
+                x.counter = 1
+                localStorage.setItem(`cartUserItems`, JSON.stringify([x]))
+                dispatch(cartAddAction())
+            }else{
+                x.counter = 1
+                cart.unshift(x)
+                localStorage.setItem(`cartUserItems`, JSON.stringify(cart))
+                dispatch(cartAddAction())
+            }
+        }
+
+    }
+    
+    const addCheck =(x)=>{
+        let cart = JSON.parse(localStorage.getItem(`cartUserItems`));
+        let cartfilt = cart ? cart.filter(m =>m.id === x.id) : ""
+        
+        if(cartfilt && !IsEmpty(cartfilt)){
+            return cartfilt[0].counter
+        }
+    }
+    
   return (
     <div>
+        {loading && <Loader />}
         <div className="shop clothes">
-            <div className='shadow_sm shop_item'>
-                <Link to={'/item-detail'}>
-                    <img src="/Images/c20a4a_e89814ef8a0e4f37b814a5f37fb4d8cf_mv2.webp" alt="" />
-                </Link>
-                <div className="shop_description">
-                    <Link to={'/item-detail'}>
-                        <div className="font_16 bold7">
-                            Solid Satin Bonnet
-                        </div>
-                    </Link>
-                    <div className="font_12 bold5">
-                        Short
-                    </div>
-                    <div className="flex pt_1">
-                        <div className=" red bold6">
-                            $25
-                        </div>
-                        <div className="left_auto add_to_cart">
-                            <div className='white'>
-                                +
+            {shopp && shopp.map(x=>{
+                if(x.is_shirt || x.is_hoodie){
+                    return(
+                        <div className='shadow_sm shop_item' key={x.id}>
+                            <Link to={`/item-detail/${x.id}`}>
+                                <img src={`${process.env.REACT_APP_BASE_URL}${x.cover_image}`} alt="" />
+                            </Link>
+                            <div className="shop_description">
+                                <Link to={`/item-detail/${x.id}`}>
+                                    <div className="font_16 bold7">
+                                        {x.name}
+                                    </div>
+                                </Link>
+                                <div className="font_12 bold5">
+                                    {x.size}
+                                </div>
+                                <div className="flex pt_1">
+                                    <div className=" red bold6">
+                                        ${x.price}
+                                    </div>
+                                    {addCheck(x) ?  
+                                        <div className="left_auto pointer" onClick={()=>{
+                                            addTocartHandler(x)
+                                            setMe(true)
+                                        }}>
+                                            <div className='red pt relative'>
+                                                <span className='font_12 bold7 pr_25'>{addCheck(x)}</span>
+                                                <span className='absoluteAdd red'>+</span>
+                                            </div>
+                                        </div>
+                                    :
+                                        <div className="left_auto add_to_cart pointer" onClick={()=>{
+                                            addTocartHandler(x)
+                                            setMe(true)
+                                        }}>
+                                            <div className='white'>
+                                                +
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='shadow_sm shop_item'>
-                <Link to={'/item-detail'}>
-                    <img src="/Images/c20a4a_e89814ef8a0e4f37b814a5f37fb4d8cf_mv2.webp" alt="" />
-                </Link>
-                <div className="shop_description">
-                    <Link to={'/item-detail'}>
-                        <div className="font_16 bold7">
-                            Solid Satin Bonnet
-                        </div>
-                    </Link>
-                    <div className="font_12 bold5">
-                        Short
-                    </div>
-                    <div className="flex pt_1">
-                        <div className=" red bold6">
-                            $25
-                        </div>
-                        <div className="left_auto add_to_cart">
-                            <div className='white'>
-                                +
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='shadow_sm shop_item'>
-                <Link to={'/item-detail'}>
-                    <img src="/Images/c20a4a_e89814ef8a0e4f37b814a5f37fb4d8cf_mv2.webp" alt="" />
-                </Link>
-                <div className="shop_description">
-                    <Link to={'/item-detail'}>
-                        <div className="font_16 bold7">
-                            Solid Satin Bonnet
-                        </div>
-                    </Link>
-                    <div className="font_12 bold5">
-                        Short
-                    </div>
-                    <div className="flex pt_1">
-                        <div className=" red bold6">
-                            $25
-                        </div>
-                        <div className="left_auto add_to_cart">
-                            <div className='white'>
-                                +
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='shadow_sm shop_item'>
-                <Link to={'/item-detail'}>
-                    <img src="/Images/c20a4a_e89814ef8a0e4f37b814a5f37fb4d8cf_mv2.webp" alt="" />
-                </Link>
-                <div className="shop_description">
-                    <Link to={'/item-detail'}>
-                        <div className="font_16 bold7">
-                            Solid Satin Bonnet
-                        </div>
-                    </Link>
-                    <div className="font_12 bold5">
-                        Short
-                    </div>
-                    <div className="flex pt_1">
-                        <div className=" red bold6">
-                            $25
-                        </div>
-                        <div className="left_auto add_to_cart">
-                            <div className='white'>
-                                +
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='shadow_sm shop_item'>
-                <Link to={'/item-detail'}>
-                    <img src="/Images/c20a4a_e89814ef8a0e4f37b814a5f37fb4d8cf_mv2.webp" alt="" />
-                </Link>
-                <div className="shop_description">
-                    <Link to={'/item-detail'}>
-                        <div className="font_16 bold7">
-                            Solid Satin Bonnet
-                        </div>
-                    </Link>
-                    <div className="font_12 bold5">
-                        Short
-                    </div>
-                    <div className="flex pt_1">
-                        <div className=" red bold6">
-                            $25
-                        </div>
-                        <div className="left_auto add_to_cart">
-                            <div className='white'>
-                                +
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    )
+                }
+            })}
+            
         </div>
     </div>
   )

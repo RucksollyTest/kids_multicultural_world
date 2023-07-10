@@ -1,16 +1,24 @@
 import {createStore, combineReducers, applyMiddleware} from "redux"
 import thunk from "redux-thunk"
 import { composeWithDevTools } from "redux-devtools-extension"
-// import { signUpReducer, userLoginReducer } from "./HomeReducer"
-import { newsLetterReducer, signUpReducer, userLoginReducer } from "./Reducer"
-// import { bookConsultationReducer, contactUsReducer, dashboardReducer, handleProjectReducer, homeListReducer, newsLetterReducer, passwordResetReducer, passwordSetReducer, paymentReducer, settingsReducer, signUpReducer, tokenRequestReducer, userLoginReducer } from "./HomeReducer"
-
+import { cartAddReducer, delReducer, eventDetsilReducer, eventReducer, kidsDetailsReducer, kidsViewReducer, logoutReducer, magazineReducer, newsLetterReducer, shopDetsilReducer, shopReducer, signUpReducer, updateReducer, userLoginReducer } from "./Reducer"
 
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
     singUp: signUpReducer,
+    kidsDetails: kidsDetailsReducer,
     newsLetter:newsLetterReducer,
+    kidsView:kidsViewReducer,
+    delImg:delReducer,
+    updateUser:updateReducer,
+    shop:shopReducer,
+    shopDetail : shopDetsilReducer,
+    eventt : eventReducer,
+    eventDetail : eventDetsilReducer,
+    cartAdd : cartAddReducer,
+    magazine : magazineReducer,
+    logout : logoutReducer,
     // dashboard:dashboardReducer,
     // paymentVerification:paymentReducer,
     // settings:settingsReducer,

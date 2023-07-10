@@ -7,6 +7,10 @@
   word-wrap: break-word; 
   color: #2E343B;
 }
+.Center{
+  display: flex;
+  align-items: center;
+}
 button{
   border: none;
 }

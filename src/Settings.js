@@ -103,15 +103,15 @@ const Settings = () => {
                                     </div>
                                     <div>
                                         <div className="padSociaDisplay font_11 bold5">
-                                            Whatsapp
+                                            Instagram
                                         </div>
-                                        <input style={{fontSize: "10px"}} type="text" placeholder='Whatsapp phone number'/>
+                                        <input style={{fontSize: "10px"}} type="text" placeholder='Instagram link'/>
                                     </div>
                                     <div>
                                         <div className="padSociaDisplay font_11 bold5">
                                             IMDb
                                         </div>
-                                        <input style={{fontSize: "10px"}} type="text" placeholder='IMDb'/>
+                                        <input style={{fontSize: "10px"}} type="text" placeholder='IMDb link'/>
                                     </div>
                                 </div>
                                 <div className="pt_2 grided3">
@@ -123,9 +123,15 @@ const Settings = () => {
                                     </div>
                                     <div>
                                         <div className="padSociaDisplay font_11 bold5">
-                                            Twitter
+                                            Portfolio
                                         </div>
-                                        <input style={{fontSize: "10px"}} type="text" placeholder='Input twitter username'/>
+                                        <input style={{fontSize: "10px"}} type="text" placeholder='Portfolio link'/>
+                                    </div>
+                                    <div>
+                                        <div className="padSociaDisplay font_11 bold5">
+                                            LinkedIn
+                                        </div>
+                                        <input style={{fontSize: "10px"}} type="text" placeholder='LinkedIn link'/>
                                     </div>
                                 </div>
                                 <div className="pt_2">

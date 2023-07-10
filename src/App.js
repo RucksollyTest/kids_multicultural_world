@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import Home from './Home';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
@@ -25,6 +26,7 @@ import Tickests from './Tickests';
 import Order from './Order';
 import Settings from './Settings';
 import Kids from './Kids';
+import ProfileEdit from './ProfileEdit';
 
 function App() {
     return (
@@ -51,7 +53,9 @@ function App() {
 					<Route path="/kids" element ={<Kids/>} />
 										
 					{/* Profile */}
+					<Route path="/profile/:id" element ={<Profile/>} />
 					<Route path="/profile" element ={<Profile/>} />
+					<Route path="/profile-edit" element ={<ProfileEdit/>} />
 
 					{/* Tickets */}
 					<Route path="/tickets" element ={<Tickests />} />
@@ -72,6 +76,7 @@ function App() {
 					<Route path="/hair-bonnets" element ={<Bonnets/>} />
 					<Route path="/cart-summary" element ={<CheckoutSummary/>} />
 					<Route path="/item-detail" element ={<ItemsDetails/>} />
+					<Route path="/item-detail/:id" element ={<ItemsDetails/>} />
 					<Route path="/orders" element ={<Order />} />
 
 					{/* Magazines */}
@@ -85,6 +90,7 @@ function App() {
 					{/* Events */}
 					<Route path="/events" element ={<Events/>} />
 					<Route path="/events-details" element ={<EventsDetails/>} />
+					<Route path="/events-details/:id" element ={<EventsDetails/>} />
 
 					{/* <Route path="/materials/:id" element ={<Materials/>} /> */}
 				</Routes>

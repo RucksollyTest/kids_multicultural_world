@@ -15,6 +15,10 @@
 .border_radius{
     border-radius: 10px;
 }
+.FlexModal{
+    display: flex;
+    flex-wrap: wrap;
+}
 .border_filter{
     border: 1px solid #f1f1f1;
     border-radius: 2px;
@@ -263,6 +267,7 @@
     text-align: center;
     padding: 8px 20px;
     color: #fff;
+    font-size: 14px;
     background-color: #3491E8;
     border-radius: 7px;
     border: none;
@@ -289,6 +294,19 @@
 .standardEvent{
     max-width: 800px;
     width: 100%;
+}
+.loaderBg{
+    background-color: #f1f1f1;
+    min-height: 300px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.minWidthCarosel{
+    max-width: 800px;
+    margin: auto;
+}
+.w_1000{
+    width: 500px;
 }
 .mageHeaderss{
     background-color: #CF5271;
@@ -599,14 +617,132 @@
 }
 .classics img{
     border-radius: 5px;
-    height: 100%;
+    /* height: 100%; */
 }
 .borrad{
     border: 0.5px solid #f1f1f1;
 }
 .myMensory img{
-    margin: 5px;
+    padding: 5px;
     border-radius: 5px;
+}
+.kidsProfile img{
+    border-radius: 10px;
+}
+.kidsProfile{
+    margin: 5px;
+}
+.modalHeader{
+    border: none;
+}
+
+/* .modal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 18px;
+    height: 533px;
+} */
+
+.mdalcontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 18px;
+    height: 533px;
+}
+.fade.modal.show{
+    padding: 0;
+}
+.modalImgContainer{
+    display: flex;
+    border-radius: 10px 0 0 10px;
+    align-items: center;
+    background: rgb(255,255,255,.5);
+}
+.cancelImg{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 100;
+}
+.modalImgContainer img{
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.modalProfileInfo{
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+}
+.profContentt{
+    border-radius: 12px;
+    background-color: #f1f1f1;
+    margin: 5px;
+    
+}
+.padPf{
+    padding: 10px 20px;
+}
+.appearanceContainer{
+    padding: 20px;
+}
+.div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+.socialMdea{
+    display: flex;
+    max-width: 230px;
+    justify-content: space-between;
+}
+.shop_item img{
+    max-height: 260px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+.myToast{
+    position: absolute;
+    z-index: 1000000000000;
+    background-color: #3491E8;
+}
+.maxWidth{
+    max-width: 200px;
+    margin: auto;
+    
+    
+}
+.maxWidth .fade.toast{
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+.Toaster{
+    background-color: rgb(25,135,84,.5);
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+.pt{
+    padding-top: 2px;
+}
+input.xdForm,
+.xdForm.passwordFormContainer{
+    border: 1px solid #CF0C36 !important;
+}
+.absoluteAdd{
+    position: absolute;
+    right: 1px;
+    font-size: 25px;
+    top: -7px;
+}
+.pr_25{
+    padding-right: 25px;
 }
 @media (max-width:900px) {
     .shop{
@@ -622,6 +758,9 @@
     }
     .signUpForms{
         padding: 20px 60px 20px 20px;
+    }
+    .detailRightN{
+        padding-left: 20px;
     }
 }
 @media (max-width:860px) {
@@ -651,6 +790,13 @@
         grid-template-columns: 1fr;
         max-width: 400px;
         margin: auto;
+    }
+    .ItemsDetail{
+        grid-template-columns: 1fr ;
+    }
+    .detailRightN{
+        padding-left: 0;
+        padding-top: 30px;
     }
     .classics{
         display: none;
@@ -748,6 +894,24 @@
     .xbfd .ml_2{
         margin: 35px 0 0 0;
     }
+    /* .modal-content {
+        grid-template-columns: 1fr;
+        height: inherit;
+    } */
+    .mdalcontent{
+        grid-template-columns: 1fr;
+        height: inherit;
+    }
+    .modalImgContainer img{
+        border-radius: 10px 10px 0 0;
+    }
+    .modalProfileInfo{
+        background-color: #fff;
+        border-radius: 0 0 10px 10px;
+    }
+    .modalImgContainer{
+        border-radius: 10px 10px 0 0;
+    }
 }
 @media (max-width:550px) {
     .paddForm{
@@ -829,6 +993,28 @@
     }
 }
 @media (max-width:450px) {
+    .font_16{
+        font-size: 13px;
+    }
+    .detailCartAdd{
+        max-width: 150px;
+    }
+    .detailCartAdd span{
+        font-size: 26px;
+        padding: 8px 20px 10px 20px;
+    }
+    .detailCartAdd samp{
+        font-size: 17px;
+        padding: 19px 10px 6px 10px;
+    }
+    .pl_2.msw{
+        padding-top: 10px;
+    }
+    .AddToCartDetailsBtn{
+        padding: 10px 20px;
+        max-width: 150px;
+    }
+    
     .font_28{
         font-size: 22px;
     }

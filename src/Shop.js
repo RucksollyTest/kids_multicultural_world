@@ -1,15 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from './Footer'
 import Carousel from 'react-bootstrap/Carousel';
 import ListHoodies from './ListHoodies';
 import ListBonnets from './ListBonnets';
 import Navbar from './Navbar';
+import Toast from 'react-bootstrap/Toast';
+
 
 const Shop = () => {
+    const [show, setShow] = useState(false);
+
     return (
         <div>
             <Navbar />
+            <div className='sticky-top maxWidth'>
+                <Toast onClose={() => setShow(false)} show={show} delay={1000} autohide>
+                    <div className="pt_5">
+                        <div className="Toaster">
+                            <div className='font_11 bold7 text-white center'>
+                                Added to cart
+                            </div>
+                        </div>
+                    </div>
+                </Toast>
+            </div>
             <div className="standard_width haefa">
                 <div className='shadow_sm border_radius'>
                     <Carousel>
@@ -79,13 +94,13 @@ const Shop = () => {
                             Hair Bonnet
                         </div>
                         <div className="left_auto pt_05">
-                            <Link to={"/home"} className="font_14 bold5 balaBlue">
+                            <Link to={"/hair-bonnets"} className="font_14 bold5 balaBlue">
                                 View all 
                                 <img className='ml_1' src="https://img.icons8.com/material-two-tone/24/null/long-arrow-right.png"/>
                             </Link>
                         </div>
                     </div>
-                    <ListBonnets />
+                    <ListBonnets setMe={setShow} />
                 </div>
                 <div className="pt_7">
                     <div className="flex">
@@ -93,13 +108,13 @@ const Shop = () => {
                             Shirts & Hoodies
                         </div>
                         <div className="left_auto pt_05">
-                            <Link to={"/home"} className="font_14 bold5 balaBlue">
+                            <Link to={"/hoodies-n-shirts"} className="font_14 bold5 balaBlue">
                                 View all 
                                 <img className='ml_1' src="https://img.icons8.com/material-two-tone/24/null/long-arrow-right.png"/>
                             </Link>
                         </div>
                     </div>
-                    <ListHoodies />
+                    <ListHoodies setMe={setShow} />
                 </div>
             </div>
             <Footer />

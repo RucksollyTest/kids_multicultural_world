@@ -62,7 +62,7 @@ const Classes = () => {
                                     Every Sunday
                                 </div>
                                 <div className="pt_2">
-                                    <Link to={"/home"} className="font_18 bold6 blue">
+                                    <Link to={"/modelling-classes"} className="font_18 bold6 blue">
                                         Register
                                     </Link>
                                 </div>
@@ -92,7 +92,7 @@ const Classes = () => {
                                     Every Sunday
                                 </div>
                                 <div className="pt_2">
-                                    <Link to={"/home"} className="font_18 bold6 blue">
+                                    <Link to={"/acting-classes"} className="font_18 bold6 blue">
                                         Register
                                     </Link>
                                 </div>

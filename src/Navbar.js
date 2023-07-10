@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import IsEmpty from './IsEmpty'
+import { useDispatch, useSelector } from 'react-redux'
+import { cartAddAction, logoutAction } from './Action'
+import { Spinner } from 'react-bootstrap'
 
 const Navbar = () => {
+    const dispatch= useDispatch()
+    const cartAdd = useSelector(state => state.cartAdd)
+    const {loading,error,cart} = cartAdd
+    const calcItems = (cart && !IsEmpty(cart)) ? cart.reduce((x,item)=>x + parseInt(item.counter),0) : 0
+    const userLogin = useSelector(state=> state.userLogin)
+    const {userInfo} = userLogin
+
+    const logout = useSelector(state=> state.logout)
+    const {error:err,loading:load,success} = logout
+    useEffect(() => {
+        dispatch(cartAddAction())
+    }, []);
   return (
     <div className='sticky-top bg-white navbaR'>
         <div className="flex standard_width">
@@ -82,15 +98,37 @@ const Navbar = () => {
                     <Link to={"/cart"} className="px_1 relative">
                         <img src="https://img.icons8.com/pastel-glyph/20/null/shopping-cart--v2.png"/>
                         <div className="cartValue">
-                            1
+                            {calcItems}
                         </div>
                     </Link>
-                    <Link to={"/login"} className="px_2 login_btn">
-                        Login
-                    </Link>
-                    <Link to={"/sign-up"} className="ml_1 sign_up_btn">
-                        Sign Up
-                    </Link>
+                    {userInfo ? 
+                        <>
+                            {load ?
+                                <Spinner animation="border" variant={"danger"} />
+                            :
+                                <a 
+                                    className='pointer px_2 login_btn'
+                                    onClick={()=>{dispatch(logoutAction(userInfo))}}
+                                >
+                                    Logout
+                                </a>
+                            }
+                            
+                            <Link to={"/dashboard"} className="ml_1 sign_up_btn">
+                                Dashboard
+                            </Link>
+                        </>
+                    :
+                        <>
+                            <Link to={"/login"} className="px_2 login_btn">
+                                Login
+                            </Link>
+                            <Link to={"/sign-up"} className="ml_1 sign_up_btn">
+                                Sign Up
+                            </Link>
+                        </>
+                    }
+                    
                     <samp>
                         <img src="https://img.icons8.com/material-sharp/24/3491E8/multiline-text.png"/>
                     </samp>

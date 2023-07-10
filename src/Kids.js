@@ -1,49 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { useDispatch, useSelector } from 'react-redux'
+import Loader from './Loader'
+import { kidsViewAction } from './Action'
+import ProfileDisplayModal from './ProfileDisplayModal'
 
-class Kids extends React.Component {
-    
-    render() {
-        const kido = "hello"
-        return (
-            <div className='myMensory'>
-                <Navbar />
-                <ResponsiveMasonry
-                    columnsCountBreakPoints={{350: 2, 750: 4, 900: 6}}
-                >
-                    <Masonry>
-                        <img src="/Images/c20a4a_e89814ef8a0e4f37b814a5f37fb4d8cf_mv2.webp" alt="" />
-                        <img src="/Images/iimages.jpeg" alt="" />
-                        <img src="/Images/imbg.jpeg" alt="" />
-                        <img src="/Images/IMG_8509.jpg" alt="" />
-                        <img src="/Images/loginImg.jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.10 (10).jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07 (1).jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07 (4).jpeg" alt="" />
-                        <img src="/Images/loginImg.jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.10 (10).jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07 (1).jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07 (4).jpeg" alt="" />
-                        <img src="/Images/IMG_8509.jpg" alt="" />
-                        <img src="/Images/loginImg.jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.10 (10).jpeg" alt="" />
-                        <img src="/Images/imbg.jpeg" alt="" />
-                        <img src="/Images/IMG_8509.jpg" alt="" />
-                        <img src="/Images/loginImg.jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.10 (10).jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07 (1).jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07 (4).jpeg" alt="" />
-                        <img src="/Images/loginImg.jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.10 (10).jpeg" alt="" />
-                        <img src="/Images/WhatsApp Image 2023-02-26 at 00.44.07 (1).jpeg" alt="" />
-                    </Masonry>
-                </ResponsiveMasonry>
-                <Footer />
-            </div>
-        )
-    }
+const Kids = () => {
+    const dispatch= useDispatch()
+    const kidsView = useSelector(state => state.kidsView)
+    const {loading,error,kids} = kidsView
+    const [modalShow, setModalShow] = useState(false);
+    const [availId, setAvailId] = useState(-1);
+
+    useEffect(()=>{
+        dispatch(kidsViewAction())
+    },[])
+    return (
+        <div className='myMensory'>
+            <Navbar />
+            {loading && <Loader />}
+            <ResponsiveMasonry
+                columnsCountBreakPoints={{350: 1, 750: 3, 900: 6}}
+            >
+                <Masonry>
+                    {kids && kids.map(x=>(
+                        <div className='kidsProfile pointer' 
+                            key={x.id} 
+                            onClick={() => {
+                                setAvailId(x.id)
+                                setModalShow(true)
+                            }}
+                        >
+                            <img className='shadow-sm' src={`${process.env.REACT_APP_BASE_URL}${x.profile_photo}`} alt={x.name} />
+                        </div>
+                    ))}
+                </Masonry>
+            </ResponsiveMasonry>
+            <Footer />
+            <ProfileDisplayModal
+                ids= {availId}
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
+        </div>
+    )
 }
 
 export default Kids
+        
